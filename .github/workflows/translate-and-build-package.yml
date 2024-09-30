@@ -34,13 +34,11 @@ jobs:
       - name: Install Translator Dependencies
         shell: bash
         run: |
-          sudo apt-get update
-          sudo apt-get install \
-          git \
-          gettext \
-          npm
+          sudo apt-get autoremove -y
+          sudo apt-get update -y
+          sudo apt-get install -y git gettext npm
           # Install attranslator
-          sudo npm install --location=global attranslate
+          #sudo npm install --location=global attranslate
 
       ## Tmate ##
       - name: Setup TMATE Session
