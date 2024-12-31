@@ -1,13 +1,14 @@
 # Maintainer: Vilmar Catafesta <vcatafesta@gmail.com>
 
 pkgname=chili-keyring
-pkgver=20240821
+pkgver=20241230
 pkgrel=3
 pkgdesc='Chili Linux PGP keyring'
 arch=('any')
-url='https://chililinux.com'
-license=('MIT')
+url="https://github.com/chililinux/${pkgname}"
 install="${pkgname}.install"
+source=("git+${url}.git")
+license=('MIT')
 source=('Makefile'
 	'chili.gpg'
 	'chili-revoked'
