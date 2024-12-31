@@ -24,10 +24,12 @@ msg() {
 }
 
 post_upgrade() {
-	if ! pacman-key --list-keys >/dev/null 2>&1; then
-		msg "Initializing pacman keyring..."
-		pacman-key --init
-	fi
+#	if ! pacman-key --list-keys >/dev/null 2>&1; then
+#		msg "Initializing pacman keyring..."
+#		pacman-key --init
+#	fi
+  msg "Initializing pacman keyring..."
+  pacman-key --init
 	msg "Importing keyring..."
 	pacman-key --add /usr/share/pacman/keyrings/chili.gpg
 	msg "Populating keyrings..."
