@@ -24,7 +24,7 @@ msg() {
 }
 
 post_upgrade() {
-	if ! pacman-key -l >/dev/null 2>&1; then
+	if ! pacman-key --list-keys >/dev/null 2>&1; then
 		msg "Initializing pacman keyring..."
 		pacman-key --init
 	fi
