@@ -22,7 +22,8 @@ sha256sums=(
 	e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 	1b68bc1f9d6210ac6ebdec489937b3af956030f21bedbfc39a3df97a2887edf1
 )
-validpgpkeys=('A0D5A8312A83940ED8B04B0F4BAC871802E960F1') # Vilmar Catafesta <vcatafesta@gmail.com>
+validpgpkeys=('A0D5A8312A83940ED8B04B0F4BAC871802E960F1'  # Vilmar Catafesta (Chili Linux) <vcatafesta@gmail.com>
+              'AB9A65BFFEA6F50DC16C789AE838465EC3F8F292') # Vilmar Catafesta (dev Biglinux/dev Chililinux) <vcatafesta@gmail.com>
 
 package() {
 	cd "${srcdir}"
